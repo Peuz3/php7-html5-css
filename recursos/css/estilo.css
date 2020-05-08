@@ -1,5 +1,5 @@
 * {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Baloo 2', cursive;
     box-sizing: border-box;
 }
 
@@ -59,4 +59,45 @@ body {
     align-items: center;
     font-size: 1.2rem;
     padding: 0px 20px;
+}
+
+.modulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modulo {
+    flex-basis: 33;
+}
+
+.modulo>h3 {
+    margin: 0px;
+    color: red;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: blue;
+}
+
+.modulo>ul {
+    margin: 0px;
+    padding: 10px;
+    list-style: none;
+}
+
+.modulo>ul>li {
+    padding: 7px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.modulo>ul>li>a {
+    display: flex;
+    text-decoration: none;
+    color: #222;
+}
+
+.modulo>ul>li>:hover {
+    background-color: #EEE;
 }
