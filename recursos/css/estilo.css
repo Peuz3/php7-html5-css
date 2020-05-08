@@ -27,18 +27,20 @@ body {
 
 .cabecalho>h1 {
     margin: 0px;
+    font-weight: 300;
     font-size: 2.8rem;
 }
 
 .cabecalho>h2 {
     margin: 0px;
+    font-weight: 200;
     font-size: 1.6rem;
 }
 
 .principal {
     grid-area: principal;
     height: calc(100vh - 180px);
-    background-color: whitesmoke;
+    background-color: #f0f0f0;
     padding: 20px;
 }
 
@@ -69,11 +71,13 @@ body {
 
 .modulo {
     flex-basis: 33;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .modulo>h3 {
     margin: 0px;
-    color: red;
+    color: white;
     font-weight: 300;
     font-size: 1.5rem;
     padding: 10px 20px;
@@ -100,4 +104,76 @@ body {
 
 .modulo>ul>li>:hover {
     background-color: #EEE;
+}
+
+.modulo.verde {
+    border: 2px solid #33ff77;
+}
+
+.modulo.verde>h3 {
+    background-color: #33ff77;
+}
+
+.modulo.vermelho {
+    border: 2px solid red;
+}
+
+.modulo.vermelho>h3 {
+    background-color: red;
+}
+
+.modulo.azul {
+    border: 2px solid #4db8ff;
+}
+
+.modulo.azul>h3 {
+    background-color: #4db8ff;
+}
+
+.modulo.roxo {
+    border: 2px solid #e600e6;
+}
+
+.modulo.roxo>h3 {
+    background-color: #e600e6;
+}
+
+.modulo.laranja {
+    border: 2px solid orangered;
+}
+
+.modulo.laranja>h3 {
+    background-color: orangered;
+}
+
+.modulo.verde-escuro {
+    border: 2px solid #006622;
+}
+
+.modulo.verde-escuro>h3 {
+    background-color: #006622;
+}
+
+.modulo.vermelho-escuro {
+    border: 2px solid #800000;
+}
+
+.modulo.vermelho-escuro>h3 {
+    background-color: #800000;
+}
+
+.modulo.azul-escuro {
+    border: 2px solid #000066;
+}
+
+.modulo.azul-escuro>h3 {
+    background-color: #000066;
+}
+
+.modulo.roxo-escuro {
+    border: 2px solid #800080;
+}
+
+.modulo.roxo-escuro>h3 {
+    background-color: #800080;
 }
