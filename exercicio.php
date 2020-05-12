@@ -24,7 +24,12 @@
 
     <main class="principal">
         <div class="conteudo">
-            
+           <?php //include("teste/teste.php");
+           
+          // include("{$_GET['dir']}/{$_GET['file']}.php")
+           include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
+           
+           ?> 
         </div> <!--Fim da div conteudo-->      
         
     </main>
