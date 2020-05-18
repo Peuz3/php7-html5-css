@@ -81,6 +81,12 @@
                             </a> 
                         </li>
 
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=string">
+                                Tipo String
+                            </a> 
+                        </li>
+
                      </ul>
                 </div> <!-- Fim da div Tipos -->                   
             </nav>
