@@ -122,6 +122,12 @@
                                 Desafio Equação
                             </a> 
                         </li>
+
+                        <li>
+                            <a href="exercicio.php?dir=variaveis&file=atribuicoes">
+                                Atribuições
+                            </a> 
+                        </li>
                     </ul>
                  </div> <!-- Fim da div Variaveis -->                    
             </nav>
