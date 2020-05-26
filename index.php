@@ -205,6 +205,12 @@
                                Switch
                             </a> 
                         </li>
+
+                        <li>
+                            <a href="exercicio.php?dir=controle&file=desafio_switch">
+                               Desafio Switch
+                            </a> 
+                        </li>
                     </ul>
                   </div> <!-- Fim da div Controle -->            
             </nav>
