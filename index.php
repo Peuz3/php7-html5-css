@@ -277,6 +277,12 @@
                             </a> 
                         </li>
 
+                        <li>
+                            <a href="exercicio.php?dir=array&file=comparacao">
+                             Comparação Arrays
+                            </a> 
+                        </li>
+
                       
                     </ul>
                   </div> <!-- Fim da div Array -->       
