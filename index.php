@@ -319,6 +319,12 @@
                              Desafio Impressão
                             </a> 
                         </li>
+
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=while">
+                            While / Do While
+                            </a> 
+                        </li>
                      </ul>
                    </div> <!-- Fim da div Repetições -->     
             </nav>
