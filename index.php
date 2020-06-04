@@ -390,7 +390,13 @@
                                 <a href="exercicio.php?dir=funcoes&file=closure_callable">
                                     Closure & Callable
                                 </a> 
-                            </li>  
+                            </li> 
+
+                            <li>
+                                <a href="exercicio.php?dir=funcoes&file=recursividade">
+                                    Recursividade
+                                </a> 
+                            </li> 
                         </ul>
                    </div> <!-- Fim da div Funções -->   
             </nav>
