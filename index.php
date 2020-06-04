@@ -349,6 +349,12 @@
                                     Função & Escopo
                                 </a> 
                             </li>  
+
+                            <li>
+                                <a href="exercicio.php?dir=funcoes&file=args_retorno">
+                                    Args & Retorno
+                                </a> 
+                            </li> 
                         </ul>
                    </div> <!-- Fim da div Funções -->   
             </nav>
