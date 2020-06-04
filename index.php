@@ -339,7 +339,18 @@
                             </a> 
                         </li>
                      </ul>
-                   </div> <!-- Fim da div Repetições -->     
+                   </div> <!-- Fim da div Repetições -->   
+
+                   <div class="modulo vermelho-escuro">
+                        <h3>7. Funções</h3>
+                        <ul>
+                            <li>
+                                <a href="exercicio.php?dir=funcoes&file=escopo">
+                                    Função & Escopo
+                                </a> 
+                            </li>  
+                        </ul>
+                   </div> <!-- Fim da div Funções -->   
             </nav>
             <!--Fim da nav modulos-->
         </div>
