@@ -355,6 +355,12 @@
                                     Args & Retorno
                                 </a> 
                             </li> 
+
+                            <li>
+                                <a href="exercicio.php?dir=funcoes&file=palindromo">
+                                    Desafio Palíndromo
+                                </a> 
+                            </li> 
                         </ul>
                    </div> <!-- Fim da div Funções -->   
             </nav>
