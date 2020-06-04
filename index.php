@@ -372,6 +372,12 @@
                                 <a href="exercicio.php?dir=funcoes&file=arg_padrao">
                                     Argumento Padrão
                                 </a> 
+                            </li> 
+
+                            <li>
+                                <a href="exercicio.php?dir=funcoes&file=usando_tipos">
+                                    Usando Tipos
+                                </a> 
                             </li>  
                         </ul>
                    </div> <!-- Fim da div Funções -->   
