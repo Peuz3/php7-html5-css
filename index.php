@@ -423,9 +423,15 @@
                         <ul>
                             <li>
                                 <a href="exercicio.php?dir=classe_objeto&file=classe">
-                                Primeira Classe
+                                    Primeira Classe
                                 </a> 
                             </li>  
+
+                            <li>
+                                <a href="exercicio.php?dir=classe_objeto&file=desafio_data">
+                                    Desafio Classe Data
+                                </a> 
+                            </li> 
                         </ul>  
                     </div>  <!-- Fim da div OO --> 
             </nav>
