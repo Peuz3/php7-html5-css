@@ -416,7 +416,18 @@
                                 </a> 
                             </li> 
                         </ul>
-                   </div> <!-- Fim da div Funções -->   
+                   </div> <!-- Fim da div Funções --> 
+
+                    <div class="modulo azul-escuro">
+                        <h3>8. Paradigmas OO</h3>
+                        <ul>
+                            <li>
+                                <a href="exercicio.php?dir=classe_objeto&file=classe">
+                                Primeira Classe
+                                </a> 
+                            </li>  
+                        </ul>  
+                    </div>  <!-- Fim da div OO --> 
             </nav>
             <!--Fim da nav modulos-->
         </div>
