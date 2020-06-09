@@ -432,6 +432,12 @@
                                     Desafio Classe Data
                                 </a> 
                             </li> 
+
+                            <li>
+                                <a href="exercicio.php?dir=classe_objeto&file=construtor_destrutor">
+                                    Construtor & Destrutor
+                                </a> 
+                            </li> 
                         </ul>  
                     </div>  <!-- Fim da div OO --> 
             </nav>
