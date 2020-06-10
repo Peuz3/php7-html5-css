@@ -1,50 +1,47 @@
 <div class="titulo">Herança</div>
 
 <?php
-
 class Pessoa {
     public $nome;
-    public $idade;    
+    public $idade;
 
-    function __construct($nome, $idade){
+    function __construct($nome, $idade) {
         $this->nome = $nome;
         $this->idade = $idade;
+        echo 'Pessoa Criada! <br>';
     }
 
-    function __destruct(){
-        echo "Fim: Pessoa";
+    function __destruct() {
+        echo 'Pessoa diz: Tchau!!';
     }
 
-    public function apresentar(){
-        return "Nome: {$this->nome}, Idade: {$this->idade} anos";
+    public function apresentar() {
+        echo "{$this->nome}, {$this->idade} anos<br>";
     }
 }
 
-class Usuario {
+class Usuario extends Pessoa {
     public $login;
 
-    function __construct($nome, $idade, $login){
-        $this->nome = $nome;
-        $this->idade = $idade;
+    function __construct($nome, $idade, $login) {
+        // $this->nome = $nome;
+        // $this->idade = $idade;
+        parent::__construct($nome, $idade);
         $this->login = $login;
+        echo 'Usuario Criado! <br>';
     }
 
-    function __destruct(){
-        echo "Fim: Usuário";
+    function __destruct() {
+        echo 'Usuário diz: Tchau!!<br>';
+        parent::__destruct();
     }
 
-    public function apresentar(){
-        return "Login: @{$this->login}" ;
-        parent:: apresentar();
+    public function apresentar() {
+        echo "@{$this->login}: ";
+        parent::apresentar();
     }
 }
 
-$pessoa = new Pessoa("Marcela Luna", 18);
-echo $pessoa->apresentar(), "<br>";
-
-$usuario = new Usuario("Bart Mark", 56, "bart_mark");
-echo $usuario->apresentar(), "<br>";
-
-unset($pessoa);
-echo "<br>";
+$usuario = new Usuario('Gustavo Mendonça', 21, 'gust_mend');
+$usuario->apresentar();
 unset($usuario);
