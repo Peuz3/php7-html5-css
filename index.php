@@ -438,6 +438,12 @@
                                     Construtor & Destrutor
                                 </a> 
                             </li> 
+
+                            <li>
+                                <a href="exercicio.php?dir=classe_objeto&file=heranca">
+                                    Herança
+                                </a> 
+                            </li> 
                         </ul>  
                     </div>  <!-- Fim da div OO --> 
             </nav>
