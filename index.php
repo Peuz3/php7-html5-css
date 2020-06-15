@@ -469,6 +469,12 @@
                                 </a> 
                             </li>
 
+                            <li>
+                                <a href="exercicio.php?dir=classe_objeto&file=desafio_erros">
+                                    Desafio Erros
+                                </a> 
+                            </li>
+
 
                         </ul>  
                     </div>  <!-- Fim da div OO --> 
