@@ -487,6 +487,12 @@
                                 </a> 
                             </li>
 
+                            <li>
+                                <a href="exercicio.php?dir=classe_objeto&file=traits_02">
+                                   Traits #02
+                                </a> 
+                            </li>
+
 
                         </ul>  
                     </div>  <!-- Fim da div OO --> 

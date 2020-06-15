@@ -12,7 +12,7 @@ trait validacao{
 
 trait validacaoMelhor{
     public $b = "Valor b"; 
-    private $c = "Valor privado"; 
+    private $c = "Valor c (privado)"; 
 
     public function validarStringMelhor($str){
         return isset($str) && trim($str);
