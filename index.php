@@ -533,6 +533,12 @@
                                     Require & Return
                                 </a> 
                             </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=includes&file=include_once">
+                                    Include Once
+                                </a> 
+                            </li>
                         </ul>  
                     </div>  <!-- Fim da div Include --> 
             </nav>
