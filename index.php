@@ -539,6 +539,12 @@
                                     Include Once
                                 </a> 
                             </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=includes&file=desafio">
+                                    Desafio 
+                                </a> 
+                            </li>
                         </ul>  
                     </div>  <!-- Fim da div Include --> 
             </nav>
