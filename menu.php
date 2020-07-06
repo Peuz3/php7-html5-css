@@ -527,5 +527,16 @@
             </li>
         </ul>
     </div> <!-- Fim da div Include -->
+
+    <div class="modulo laranja-escuro">
+        <h3>10. Namespace</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=namespace&file=basico">
+                     Exemplo Básico
+                </a>
+            </li>
+        </ul>
+    </div> <!-- Fim da div OO -->
 </nav>
 <!--Fim da nav modulos-->
