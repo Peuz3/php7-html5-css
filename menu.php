@@ -533,13 +533,13 @@
         <ul>
             <li>
                 <a href="exercicio.php?dir=namespace&file=basico">
-                     Exemplo Básico
+                    Exemplo Básico
                 </a>
             </li>
 
             <li>
                 <a href="exercicio.php?dir=namespace&file=sub_namespaces">
-                     Sub-Namespaces
+                    Sub-Namespaces
                 </a>
             </li>
 
@@ -549,6 +549,17 @@
                 </a>
             </li>
         </ul>
-    </div> <!-- Fim da div OO -->
+    </div> <!-- Fim da div Namespaces -->
+
+    <div class="modulo verde">
+        <h3>11. Tratamento de Erro</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=tratamento_erro&file=try_catch">
+                    Try/Catch
+                </a>
+            </li>
+        </ul>
+    </div> <!-- Fim da div Trat Erro -->
 </nav>
 <!--Fim da nav modulos-->
