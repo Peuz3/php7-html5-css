@@ -51,5 +51,3 @@ $federal2->func();
 use \App\Recursos\Governo\Federal\Governo as FederalAlias;
 $federal3 = new FederalAlias();
 $federal3->func();
-
-
