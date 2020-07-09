@@ -19,7 +19,7 @@ define(__NAMESPACE__ . '\TAXA2',8.78);
 define('governo_federal\IMPOSTO',10.17);
 
 function produtoComTributos($valorProduto){
-    $valorProduto += TAXA + TAXA2 + TAXA_IMPORTACAO + \TAXA_IMPORTACAO + \governo_federal\IMPOSTO;
+    $valorProduto += TAXA  + TAXA_IMPORTACAO + \TAXA_IMPORTACAO + \governo_federal\IMPOSTO;
     return $valorProduto;
 }
 
