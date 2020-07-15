@@ -574,12 +574,21 @@
 
             <li>
                 <a href="exercicio.php?dir=tratamento_erro&file=gerenciador_erro">
-                   Erro Handler
+                    Erro Handler
                 </a>
             </li>
-
-
         </ul>
     </div> <!-- Fim da div Trat Erro -->
+
+    <div class="modulo vermelho">
+        <h3>12. Sessão</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=sessao&file=basico_sessao">
+                    Sessão
+                </a>
+            </li>
+        </ul>
+    </div> <!-- Fim da div Sessão -->
 </nav>
 <!--Fim da nav modulos-->
