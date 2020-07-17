@@ -12,7 +12,7 @@ if($_POST['email']) {
             "senha" => "123456",
         ],
         [
-            "nome" => "João",
+            "nome" => "João Pedro",
             "email" => "joao@email.com.br",
             "senha" => "7654321",
         ],

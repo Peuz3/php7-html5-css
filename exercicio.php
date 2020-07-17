@@ -19,26 +19,30 @@ if(!$_SESSION['usuario']){
 
 </head>
 
-<body class = "exercicio">
+<body class="exercicio">
     <header class="cabecalho">
         <h1>Curso PHP</h1>
         <h2>Visualização do Exercícios</h2>
     </header>
 
     <nav class="navegacao">
-            <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> class="verde">Sem formatação</a>
-            <a href="index.php" class="vermelho">Voltar</a>
-        </nav><!--Fim da nav navegacao--> 
+        <span class="usuario">Usuário: <?=$_SESSION['usuario'];?></span>        
+        <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> class="verde">Sem formatação</a>
+        <a href="index.php">Voltar</a>
+        <a href="logout.php" class="vermelho">Sair</a>
+    </nav>
+    <!--Fim da nav navegacao-->
 
     <main class="principal">
         <div class="conteudo">
-           <?php           
+            <?php           
          
            include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
            
-           ?> 
-        </div> <!--Fim da div conteudo-->      
-        
+           ?>
+        </div>
+        <!--Fim da div conteudo-->
+
     </main>
 
     <footer class="rodape">
