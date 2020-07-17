@@ -1,5 +1,11 @@
 <?php
 session_start();
+//Saber se o usuário está presente nos cookies
+
+if($_COOKIE['usuario']){
+    $_SESSION['usuario'] = $_COOKIE['usuario'];
+}
+
 if(!$_SESSION['usuario']){
     header('Location:login.php');
 }
