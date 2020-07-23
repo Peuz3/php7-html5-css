@@ -610,6 +610,12 @@
                 <a href="exercicio.php?dir=api&file=data_02">
                     Datas #02
                 </a>
+            </li> 
+
+            <li>
+                <a href="exercicio.php?dir=api&file=escrever_arquivo">
+                    Escrever Arquivo
+                </a>
             </li>  
         </ul>
     </div> <!-- Fim da div API -->
