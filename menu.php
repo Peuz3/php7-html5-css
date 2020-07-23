@@ -596,5 +596,18 @@
             </li>
         </ul>
     </div> <!-- Fim da div Sessão -->
+    
+    <div class="modulo azul">
+        <h3>12. Sessão</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=api&file=data_01">
+                    Datas #01
+                </a>
+            </li>
+          
+           
+        </ul>
+    </div> <!-- Fim da div API -->
 </nav>
 <!--Fim da nav modulos-->
