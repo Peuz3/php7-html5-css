@@ -8,23 +8,20 @@ echo date("D,  M  Y H:i A") . "<br>";
 
 echo utf8_encode(strftime("%A, %d de %B de %Y", time())) . "<br>";
 
-
-//setlocale(LC_TIME, 'Brazil' , 'pt_BR.utf-8'); 
-//setlocale(LC_TIME, 'pt_BR.utf-8', 'portuguese-brazilian');
-setlocale(LC_ALL, 'pt_BR', 'pt_BR.UTF-8', 'pt_BR.utf-8', 'portuguese'); 
+setlocale(LC_TIME, 'portuguese.utf-8');
 
 
 echo strftime("%A, %d de %B de %Y", time()) . "<br>";
 
 $amanha = time() + (24 * 60 * 60);
-echo utf8_encode(strftime("%A, %d, de %B de %Y", $amanha)) . "<br>";
+echo strftime("%A, %d, de %B de %Y", $amanha) . "<br>";
 
 $proximaSemana = strtotime("+1 week");
-echo utf8_encode(strftime("%A, %d de %B de %Y",$proximaSemana)) . "<br>";
+echo strftime("%A, %d de %B de %Y",$proximaSemana) . "<br>";
 
 $proximosAnos = strtotime("+6 year");
-echo utf8_encode(strftime("%A, %d de %B de %Y",$proximosAnos)) . "<br>";
+echo strftime("%A, %d de %B de %Y",$proximosAnos) . "<br>";
 
 $dataFixa = mktime(15,30,50,1,25,1975);
-echo utf8_encode(strftime("%A, %d, de %B de %Y - %H:%M:%S", $dataFixa));
+echo strftime("%A, %d, de %B de %Y - %H:%M:%S", $dataFixa);
 
