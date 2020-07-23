@@ -1,2 +1,3 @@
 Novíssimo Conteúdo Apresentado!!!
-Posso adicionar novos contéudos sem sobrescrever
+Novas informações
+Adicionando infos no arquivo enquanto lê�rquivo enquanto lê
