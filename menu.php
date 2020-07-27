@@ -635,6 +635,12 @@
                    Download
                 </a>
             </li>
+
+            <li>
+                <a href="exercicio.php?dir=api&file=imagens">
+                   Imagem
+                </a>
+            </li>
         </ul>
     </div> <!-- Fim da div API -->
 </nav>
