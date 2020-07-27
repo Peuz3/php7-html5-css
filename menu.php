@@ -588,7 +588,7 @@
                     Sessão
                 </a>
             </li>
-          
+
             <li>
                 <a href="exercicio.php?dir=sessao&file=gerenciando_sessao">
                     Gerenciando Sessão
@@ -596,21 +596,21 @@
             </li>
         </ul>
     </div> <!-- Fim da div Sessão -->
-    
+
     <div class="modulo azul">
-        <h3>12. Sessão</h3>
+        <h3>13. API</h3>
         <ul>
             <li>
                 <a href="exercicio.php?dir=api&file=data_01">
                     Datas #01
                 </a>
             </li>
-            
+
             <li>
                 <a href="exercicio.php?dir=api&file=data_02">
                     Datas #02
                 </a>
-            </li> 
+            </li>
 
             <li>
                 <a href="exercicio.php?dir=api&file=escrever_arquivo">
@@ -622,26 +622,39 @@
                 <a href="exercicio.php?dir=api&file=ler_arquivo">
                     Ler Arquivo
                 </a>
-            </li>  
+            </li>
 
             <li>
                 <a href="exercicio.php?dir=api&file=upload">
-                   Upload
+                    Upload
                 </a>
             </li>
 
             <li>
                 <a href="exercicio.php?dir=api&file=download">
-                   Download
+                    Download
                 </a>
             </li>
 
             <li>
                 <a href="exercicio.php?dir=api&file=imagens">
-                   Imagem
+                    Imagem
                 </a>
             </li>
         </ul>
     </div> <!-- Fim da div API -->
+
+    <div class="modulo roxo">
+        <h3>14. Formulário</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=formulario&file=formulario">
+                    Formulário
+                </a>
+            </li>
+        </ul>
+    </div> <!-- Fim da div Formulário -->
+
+
 </nav>
 <!--Fim da nav modulos-->
