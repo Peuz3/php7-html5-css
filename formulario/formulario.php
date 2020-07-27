@@ -6,6 +6,46 @@
 
 <h2>Cadastro</h2>
 
+<?php
+if(count($_POST) > 0){
+    if(!filter_input(INPUT_POST,"nome")){
+        echo "Nome é obrigatório!", "<br>";
+    }
+    
+    if(filter_input(INPUT_POST, "nascimento")){
+        $data = DateTime::createFromFormat(
+            'd/m/Y', $_POST['nascimento']);
+        
+        if(!$data){
+            echo "Data deve estar no padrão dd/mm/aaaa!" , "<br>";
+        }    
+    }
+
+    if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+        echo "E-mail inválido!", "<br>";
+
+    }
+
+    if(!filter_var($_POST['site'], FILTER_VALIDATE_URL)){
+        echo "Site inválido!", "<br>";
+    }
+
+    $filhosConfiguracao = ["options" => ["min_range" => 0, "max_range" => 20]];
+
+    if(!filter_var($_POST['filhos'],FILTER_VALIDATE_INT,
+            $filhosConfiguracao) && $_POST['filhos'] !=0){
+        echo "Quantidade de filhos é inválida", "<br>";
+    }
+
+    $salarioConfiguracao = ["options" => ["decimal" => ","]];
+    if(!filter_var($_POST['salario'], FILTER_VALIDATE_FLOAT, $salarioConfiguracao)){
+        echo "Salário inválido!";
+    }
+
+}
+
+?>
+
 <form action="#" method="post">
     <div class="form-row">
         <div class="form-group col-md-9">
@@ -42,7 +82,7 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="filhos">Quantidade de Filhos</label>
-            <input type="text" class="form-control" 
+            <input type="number" class="form-control" 
                 id="filhos" name="filhos" placeholder="Nº de Filhos"
                 value="<?= $_POST['filhos'] ?>">
         </div>
