@@ -14,8 +14,6 @@ if($_FILES && $_FILES['arquivo']){
     }else{
         echo "<br>Erro no upload de arquivo";
     }
-
-  
 }
 ?>
 
