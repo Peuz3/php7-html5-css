@@ -675,6 +675,12 @@
                     Inserir Registro #01
                 </a>
             </li>
+
+            <li>
+                <a href="exercicio.php?dir=db&file=consultar">
+                    Consultar Registros
+                </a>
+            </li>
         </ul>
     </div> <!-- Fim da div DB -->
 
