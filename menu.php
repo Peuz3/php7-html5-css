@@ -655,6 +655,17 @@
         </ul>
     </div> <!-- Fim da div Formulário -->
 
+    <div class="modulo laranja">
+        <h3>15. Banco de Dados</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=db&file=criar_banco">
+                    Criar Banco
+                </a>
+            </li>
+        </ul>
+    </div> <!-- Fim da div DB -->
+
 
 </nav>
 <!--Fim da nav modulos-->
