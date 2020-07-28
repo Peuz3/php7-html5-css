@@ -669,6 +669,12 @@
                     Criar Tabela
                 </a>
             </li>
+
+            <li>
+                <a href="exercicio.php?dir=db&file=inserir_1">
+                    Inserir Registro #01
+                </a>
+            </li>
         </ul>
     </div> <!-- Fim da div DB -->
 
