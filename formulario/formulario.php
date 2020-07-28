@@ -1,15 +1,16 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-    crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <div class="titulo">Formulário</div>
 
 <h2>Cadastro</h2>
 
 <?php
+$erros = [];
+
 if(count($_POST) > 0){
     if(!filter_input(INPUT_POST,"nome")){
-        echo "Nome é obrigatório!", "<br>";
+        $erros['nome'] = "Nome é obrigatório!";
     }
     
     if(filter_input(INPUT_POST, "nascimento")){
@@ -17,83 +18,109 @@ if(count($_POST) > 0){
             'd/m/Y', $_POST['nascimento']);
         
         if(!$data){
-            echo "Data deve estar no padrão dd/mm/aaaa!" , "<br>";
+            $erros['nascimento'] = "Data deve estar no padrão dd/mm/aaaa!";
         }    
     }
 
     if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
-        echo "E-mail inválido!", "<br>";
+        $erros['email'] = "E-mail inválido!";
 
     }
 
     if(!filter_var($_POST['site'], FILTER_VALIDATE_URL)){
-        echo "Site inválido!", "<br>";
+        $erros['site'] = "Site inválido!";
     }
 
     $filhosConfiguracao = ["options" => ["min_range" => 0, "max_range" => 20]];
 
-    if(!filter_var($_POST['filhos'],FILTER_VALIDATE_INT,
-            $filhosConfiguracao) && $_POST['filhos'] !=0){
-        echo "Quantidade de filhos é inválida", "<br>";
+    if(!filter_var($_POST['filhos'],FILTER_VALIDATE_INT,$filhosConfiguracao) && $_POST['filhos'] !=0){
+        $erros['filhos'] = "Quantidade de filhos é inválida(0-20)";
     }
 
-    $salarioConfiguracao = ["options" => ["decimal" => ","]];
+    $salarioConfiguracao = ["options" => ["decimal" => ",","min_range" => 1045 ]];
     if(!filter_var($_POST['salario'], FILTER_VALIDATE_FLOAT, $salarioConfiguracao)){
-        echo "Salário inválido!";
+        $erros['salario'] = "Salário inválido!";
     }
-
 }
 
 ?>
+<!-- Utilizando o alert do bootstrap -->
+<?php foreach($erros as $erro) : ?>
+<!-- <div class="alert alert-danger" role="alert"> -->
+<?= "" //$erro ?>
+<!-- </div> -->
+<?php endforeach ?>
+
 
 <form action="#" method="post">
     <div class="form-row">
-        <div class="form-group col-md-9">
+        <div class="form-group col-md-8">
             <label for="nome">Nome</label>
-            <input type="text" class="form-control" 
-                id="nome" name="nome" placeholder="Nome"
+            <input type="text" 
+                class="form-control <?= $erros['nome'] ? 'is-invalid' : ''?>"
+                id="nome" name="nome" placeholder="Informe o seu nome"
                 value="<?= $_POST['nome'] ?>">
+            <div class="invalid-feedback">
+                <?= $erros['nome'] ?>
+            </div>
         </div>
-
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
             <label for="nascimento">Nascimento</label>
-            <input type="text" class="form-control" 
-                id="nascimento" name="nascimento" placeholder="Ex: 01/01/2000"
+            <input type="text"
+                class="form-control <?= $erros['nascimento'] ? 'is-invalid' : ''?>"
+                id="nascimento" name="nascimento"
+                placeholder="Ex.: 01/01/2000"
                 value="<?= $_POST['nascimento'] ?>">
+            <div class="invalid-feedback">
+                <?= $erros['nascimento'] ?>
+            </div>
         </div>
     </div>
-
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="email">E-mail</label>
-            <input type="text" class="form-control" 
-                id="email" name="email" placeholder="E-mail"
+            <input type="text"
+                class="form-control <?= $erros['email'] ? 'is-invalid' : ''?>"
+                id="email" name="email" placeholder="Informe o seu e-mail"
                 value="<?= $_POST['email'] ?>">
+            <div class="invalid-feedback">
+                <?= $erros['email'] ?>
+            </div>
         </div>
-
         <div class="form-group col-md-6">
             <label for="site">Site</label>
-            <input type="text" class="form-control" 
-                id="site" name="site" placeholder="Informe o site"
+            <input type="text"
+                class="form-control <?= $erros['site'] ? 'is-invalid' : ''?>"
+                id="site" name="site" placeholder="Ex.: https://www.site.com"
                 value="<?= $_POST['site'] ?>">
+            <div class="invalid-feedback">
+                <?= $erros['site'] ?>
+            </div>
         </div>
     </div>
-
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="filhos">Quantidade de Filhos</label>
-            <input type="number" class="form-control" 
-                id="filhos" name="filhos" placeholder="Nº de Filhos"
+            <label for="filhos">Qtde de Filhos</label>
+            <input type="number" 
+                class="form-control <?= $erros['filhos'] ? 'is-invalid' : ''?>"
+                id="filhos" name="filhos"
+                placeholder="Nº de Filhos"
                 value="<?= $_POST['filhos'] ?>">
+            <div class="invalid-feedback">
+                <?= $erros['filhos'] ?>
+            </div>
         </div>
-
         <div class="form-group col-md-6">
             <label for="salario">Salário</label>
-            <input type="text" class="form-control" 
-                id="salario" name="salario" placeholder="Informe o seu salário"
+            <input type="text"
+                class="form-control <?= $erros['salario'] ? 'is-invalid' : ''?>"
+                id="salario" name="salario"
+                placeholder="Informe o seu salário"
                 value="<?= $_POST['salario'] ?>">
+            <div class="invalid-feedback">
+                <?= $erros['salario'] ?>
+            </div>
         </div>
     </div>
-
     <button class="btn btn-primary btn-lg">Enviar</button>
 </form>
