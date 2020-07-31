@@ -681,6 +681,12 @@
                     Consultar Registros
                 </a>
             </li>
+
+            <li>
+                <a href="exercicio.php?dir=db&file=excluir_1">
+                    Excluir Registros #01
+                </a>
+            </li>
         </ul>
     </div> <!-- Fim da div DB -->
 
