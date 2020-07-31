@@ -687,6 +687,12 @@
                     Excluir Registros #01
                 </a>
             </li>
+
+            <li>
+                <a href="exercicio.php?dir=db&file=excluir_2">
+                    Excluir Registros #02
+                </a>
+            </li>
         </ul>
     </div> <!-- Fim da div DB -->
 
