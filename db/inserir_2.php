@@ -56,7 +56,7 @@
                 $dados['email'],
                 $dados['site'],
                 $dados['filhos'],
-                $dados['salario'],
+                $dados['salario'] ? str_replace(",", ".", $dados['salario']) : null
             ];
 
             $stmt->bind_param("ssssid", ...$params);

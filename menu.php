@@ -693,15 +693,18 @@
                     Excluir Registros #02
                 </a>
             </li>
-<<<<<<< HEAD
 
             <li>
                 <a href="exercicio.php?dir=db&file=inserir_2">
                     Inserir Registro #02
                 </a>
             </li>
-=======
->>>>>>> 9cb92cb057b45ceb406571c890a736a62450b446
+
+            <li>
+                <a href="exercicio.php?dir=db&file=alterar">
+                   Alterar Registro 
+                </a>
+            </li>
         </ul>
     </div> <!-- Fim da div DB -->
 
