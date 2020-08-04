@@ -23,3 +23,5 @@ if($conexao->exec($sql)){
 }else{
     echo $conexao->errorCode();
 }
+
+$conexao->close();
